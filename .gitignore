@@ -1,0 +1,26 @@
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data files
+*.csv
+*.json
+*.parquet
+*.txt
+*.xls
+*.xlsx
+*.ods
+*.zip
+
+# Local configuration and databases
+*.sqlite
+*.db
+.env
+.venv
