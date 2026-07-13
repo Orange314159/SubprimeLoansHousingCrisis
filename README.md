@@ -1,4 +1,4 @@
-# Notes On My Project
+# Long Tail Impacts of Subprime Loans in the Early 2000s
 
 -- Matthew Robson 
 
@@ -22,6 +22,7 @@ To do the data analysis for this project I will be using Python with the Polars 
 
 The data for this project primarily comes from the Housing Mortgage Disclosure Act (HMDA). 
 We found data on the years [2000 - 2006] on OPENICPSR:  
+
 [OPENICPSR Data](https://www.openicpsr.org/openicpsr/project/151921/version/V1/view?flag=follow&path=/openicpsr/151921/fcr:versions/V1&type=project&pageSize=50&sortOrder=(?title)&sortAsc=true)
 
 The HMDA data for the years [2007 - 2010] was found on the government's Consumer Financial Protection Bureau:  
@@ -29,7 +30,13 @@ The HMDA data for the years [2007 - 2010] was found on the government's Consumer
 [cfpb Data](https://www.consumerfinance.gov/data-research/hmda/historic-data/)
 
 Additional sources were used as primary reading to back up the reliability of the above sources. Noteably we considered Ronald Utt's *The Subprime Mortgage Market Collapse: A Primer on the Causes and Possible Solutions*  
+
 [Source](https://www.heritage.org/report/the-subprime-mortgage-market-collapse-primer-the-causes-and-possible-solutions)
 
 Finally, in order to determine the subprime loans made before the additional reporting added to the HMDA in 2004 we used Subprime lender list from the HUD.  
+
 [HUD Subprime Lender Data](https://www.huduser.gov/archives/portal/datasets/manu.html)
+
+### Improved Data Ingestion
+
+One major issue found in the raw data files as provided above was the inconsistent use of commas and vertical bars as delimiters. To solve this issue, the `CSV_FIXER.py` file was created to swap out the use of vertical bars for commas. Additionally, in the later data files [2007 - 2010], the data set contains each of the elements in quotes. In order to speed up the processing of this data the `removeQuotes.py` file can be run on each of the respective files. Finally, because these files have many rows, it pays to use a schema for each file. Those can be found in the `readLoanData.py` file which allows for the fast reading of the given data files.  
