@@ -1,8 +1,6 @@
 import polars as pl
 import time
 
-## This is just here for benchmakring
-
 
 ## I will include the schema for each year so the loading of the files happens much faster
 
