@@ -43,6 +43,10 @@ As for the housing security data, we used data from the Department of Housing an
 
 [Socioeconomic Estimate Data](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::acs-5yr-socioeconomic-estimate-data-by-tract/about)
 
+In order to maintain effective plots we used shape data from IPUMS NHGIS:  
+
+[NHGIS Shape Data](https://data2.nhgis.org/main)
+
 ### Improved Data Ingestion
 
 One major issue found in the raw data files as provided above was the inconsistent use of commas and vertical bars as delimiters. To solve this issue, the `CSV_FIXER.py` file was created to swap out the use of vertical bars for commas. Additionally, in the later data files [2007 - 2010], the data set contains each of the elements in quotes. In order to speed up the processing of this data the `removeQuotes.py` file can be run on each of the respective files. Finally, because these files have many rows, it pays to use a schema for each file. Those can be found in the `readLoanData.py` file which allows for the fast reading of the given data files.  
