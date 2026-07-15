@@ -1,5 +1,5 @@
-import polars as pl 
-import geopandas as gpd 
+import polars            as pl 
+import geopandas         as gpd 
 import matplotlib.pyplot as plt 
 
 ## First we need to process the data from the csv so we will import then take the cols that we need
@@ -15,7 +15,7 @@ schema_2000 = {
 }
 
 file_number = 2000
-file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/LoanData/HMDA_DATA_SET/HMDA_{file_number}/HMDA_{file_number}.csv"
+file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_NORMAL.csv"
 
 df = pl.read_csv(file_name, schema=schema_2000)
 
@@ -60,7 +60,7 @@ continental_gdf = tract_gdf[
 ]
 
 ## Merge on GISJOIN so the spacial data (continental_gdf) and the loan data (tract_averages) are in the same GDF 
-merged_gdf = continental_gdf.merge(tract_averages, on="GISJOIN", how="inner")
+merged_gdf = continental_gdf.merge(tract_averages, on="GISJOIN", how="left")
 
 ## fix cordinate system, epsg is 5070 bc/ Albers Equal Area projection using meters
 merged_gdf = merged_gdf.to_crs(epsg=5070)
@@ -85,12 +85,16 @@ merged_gdf.plot(
     ax=ax,                    ## clearly
     vmin=vmin_val,            ## again with the saturation
     vmax=vmax_val,            ## see above
+    missing_kwds={
+        "color": "darkgrey",  # Color for tracts with NaN values
+        "label": "No Data"     # Optional: adds "No Data" to a categorical legend (if not using continuous colorbar)
+    },
     legend_kwds={
         "label": "Average Loan Amount (Thousands of Dollars)",
         "orientation": "horizontal", ## fits better
         "pad": 0.05,
         "shrink": 0.7,
-        "extend": "max"  ## because we capped at 90% max there are higher values so it should be arrow
+        "extend": "both"  ## because we capped at 90% max there are higher values so it should be arrow
     }
 )
 

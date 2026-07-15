@@ -45,16 +45,16 @@ schema_2000 = {
 
 
 ## Now this is how you select which file you want to read 
-file_number = 2003
+file_number = 2000
 file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/LoanData/HMDA_DATA_SET/HMDA_{file_number}/HMDA_{file_number}.csv"
 
 
-df = pl.read_csv(file_name, schema=schema_2003)
+df = pl.read_csv(file_name, schema=schema_2000)
 
 df_normal = df.select(['activity_year', 'agency_code', 'loan_type', 'loan_amount', 'census_tract', 'income', 
-                       'applicant_race_1'])
+                       'applicant_race_1', 'state_code', 'county_code'])
 
 print(df_normal.head())
 
-df_normal.write_csv("HMDA_2003_NORMAL.csv")
+df_normal.write_csv("HMDA_2000_NORMAL.csv")
 
