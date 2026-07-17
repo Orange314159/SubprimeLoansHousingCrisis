@@ -1,6 +1,6 @@
 import polars as pl 
 
-df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/merged_housing.csv")
+df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/HousingData/clean_merged_data.csv")
 
 header_map = {
     "B25002": "OccupancyStatus",
