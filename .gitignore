@@ -19,6 +19,7 @@ __pycache__/
 *.xlsx
 *.ods
 *.zip
+*.GeoJSON
 
 # Local configuration and databases
 *.sqlite
