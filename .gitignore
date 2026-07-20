@@ -11,6 +11,7 @@ __pycache__/
 
 # Data files
 *.csv
+!ReducedLoanData/HMDA_Combined.csv
 *.json
 *.parquet
 *.txt
