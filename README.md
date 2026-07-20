@@ -1,6 +1,8 @@
 # Long Tail Impacts of Subprime Loans in the Early 2000s
 
--- Matthew Robson 
+Author -- Matthew Robson
+Advisor -- Aaron Grinberg
+Organization -- Institute of Computing in Research
 
 ## Goal of the Project
 
@@ -16,7 +18,7 @@ Data will not be stored in the repository as this project has in excess of 40GB 
 
 ### Data Analysis + Tools
 
-To do the data analysis for this project I will be using Python with the Polars package. Polars has been selected for its high level of performance and ease of use / integration with other tools. There will be some use of other packages such as `requests` in order to perform some of the API requests for data.
+To do the data analysis for this project I will be using Python with the Polars package. Polars has been selected for its high level of performance and ease of use / integration with other tools. There will be some use of other packages such as requests in order to perform some of the API requests for data.
 
 ### Data Sources
 
@@ -51,6 +53,13 @@ In order to maintain effective plots we used shape data from IPUMS NHGIS:
 
 One major issue found in the raw data files as provided above was the inconsistent use of commas and vertical bars as delimiters. To solve this issue, the `CSV_FIXER.py` file was created to swap out the use of vertical bars for commas. Additionally, in the later data files [2007 - 2010], the data set contains each of the elements in quotes. In order to speed up the processing of this data the `removeQuotes.py` file can be run on each of the respective files. Finally, because these files have many rows, it pays to use a schema for each file. Those can be found in the `readLoanData.py` file which allows for the fast reading of the given data files.  
 
+### Data Manipulation
+
+As mentioned above, there was significant work done to work with such a large dataset, but this is not only limited to ingestion. All of the programs used to manipulate data can be found in the `dataManipulation` subfolder of the repository. Through these files we developed multiple levels of compression on the data all the way to the level of `ReducedLoanData/HMDA_Combined.csv` which contains the census-level loan data combined between years [2004 - 2007]. The initial goal of this project was to focus on this shorter time period, so the rest of the data ([2000 2003] U [2008 - 2010]) was excluded completely from the final analysis. This leaves us with the only columns that we care about, GISJOIN (a GIS location specifier), average income, and subprime percentage. The subprime percentage was calculated by taking the total number of loans in a given census tract for each year and combining the subprime loan percentages calculated by year based on a weighted average from the number of loans given each year. This is mathematically equivalent to just finding the percentage of the whole timeframe. Finally, no dollar adjustments were made in this compression of years because the use of the average_income column is for purely relative comparisons, and we have no reason to believe that valuation of money changes at different rates in different locations across the US.  
+
+## Graphing & Plotting 
+
+In order to plot in a repeatable and easy-to-understand manner, we used matplotlib. In order to allow for geographical plots, we used GeoPandas, a pandas-based package that has functionality for plotting directly to matplotlib when given spatial data. The `graphs/` folder includes most of the generated images from the plotting. Most of these images were generated at 300 dpi using a 20 by 12 style in mpl. Higher resolution images and other file types were attempted, but this was found to be a good balance of functionality and speed. An SVG image, for example, could be generated, but when created, this file would be over 300MB and was crashing nearly all image editing tools and so is difficult to use.
 
 
 
