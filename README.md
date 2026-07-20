@@ -1,8 +1,10 @@
 # Long Tail Impacts of Subprime Loans in the Early 2000s
 
-Author -- Matthew Robson
-Advisor -- Aaron Grinberg
-Organization -- Institute of Computing in Research
+Author -- Matthew Robson  
+
+Advisor -- Aaron Grinberg  
+
+Organization -- Institute of Computing in Research  
 
 ## Goal of the Project
 
