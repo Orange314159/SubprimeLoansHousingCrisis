@@ -65,5 +65,11 @@ As mentioned above, there was significant work done to work with such a large da
 
 In order to plot in a repeatable and easy-to-understand manner, we used matplotlib. In order to allow for geographical plots, we used GeoPandas, a pandas-based package that has functionality for plotting directly to matplotlib when given spatial data. The `graphs/` folder includes most of the generated images from the plotting. Most of these images were generated at 300 dpi using a 20 by 12 style in mpl. Higher resolution images and other file types were attempted, but this was found to be a good balance of functionality and speed. An SVG image, for example, could be generated, but when created, this file would be over 300MB and was crashing nearly all image editing tools and so is difficult to use.
 
+### Pairplot
 
+![SNS Pairplot](./graphs/pairplot.png)
+
+### Subprime Loan Variation by Location 
+
+![Subprime Loans by Location](./graphs/LoansByTract.png)
 
