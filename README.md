@@ -69,7 +69,11 @@ In order to plot in a repeatable and easy-to-understand manner, we used matplotl
 
 ![SNS Pairplot](./graphs/pairplot.png)
 
+This plot demonstrates the correlation between variables. For example, you can see the negative trend between Median Household Income and PCT Subprime in the bottom right corner. This graph was generated from 5,000 sampled points out of the roughly 60,000 census tracts for each plot. The code that generated this plot can be found at `./plotting/pairplot.py`. 
+
 ### Subprime Loan Variation by Location 
 
-![Subprime Loans by Location](./graphs/LoansByTract.png)
+![Subprime Loans by Location](./graphs/SubprimeLoanSpread2006.png)
+
+This plot shows the distribution of subprime loans over the period [2004 - 2007] in the lower 48. Color in the plot represents the percentage of loans considered subprime (rate spread >3%). The code used to generate this graph can be found at `./plotting/plotSubprime.py`.
 
