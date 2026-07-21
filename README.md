@@ -47,6 +47,8 @@ As for the housing security data, we used data from the Department of Housing an
 
 [Socioeconomic Estimate Data](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::acs-5yr-socioeconomic-estimate-data-by-tract/about)
 
+[Demographic Data](https://hudgis-hud.opendata.arcgis.com/datasets/HUD::acs-5yr-demographic-estimate-data-by-tract/about)
+
 In order to maintain effective plots we used shape data from IPUMS NHGIS:  
 
 [NHGIS Shape Data](https://data2.nhgis.org/main)
