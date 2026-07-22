@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
         
 """                            OLS Regression Results                            
-==============================================================================
+=============================================================================
 Dep. Variable:      Overcrowding_Rate   R-squared:                       0.027
 Model:                            OLS   Adj. R-squared:                  0.027
 Method:                 Least Squares   F-statistic:                     1230.

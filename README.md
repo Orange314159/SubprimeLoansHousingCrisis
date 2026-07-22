@@ -77,3 +77,28 @@ This plot demonstrates the correlation between variables. For example, you can s
 
 This plot shows the distribution of subprime loans over the period [2004 - 2007] in the lower 48. Color in the plot represents the percentage of loans considered subprime (rate spread >3%). The code used to generate this graph can be found at `./plotting/plotSubprime.py`.
 
+
+
+## Run This Code Yourself!
+(Debian based Linux)
+### Setup:
+
+- Ensure you have Python and Git installed on your system
+- Access this repository
+    - (Option A) Use the terminal with `git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis`
+    - (Option B) Download the zip file through the code dropdown near the top of this page and unzip the file
+- Create a virtual environment to use python in
+    - In the terminal run `python -m venv .venv` This will create your environment
+    - Then run `source .venv/bin/activate` to ensure that you are now using that environment
+- Install the required packages for this project 
+    - Depending on the files that you use there may be different required packages, but to be safe you can install them all with `pip install numpy scikitlearn pandas polars textwrap matplotlib networkx seaborn geopandas statsmodels bambi`
+- Collect the data
+    - This repository does not contain the raw data used in the project due to the massive size of that data (60GB+). If you wish to download that data yourself you must go through the referenced links on the earlier parts of the README to download said data. -- NOTE I AM LOOKING INTO AUTOMATING THIS BUT HAVE NOT FOUND A RELIABLE WAY TO DO THIS YET 
+- Clean the data
+    - Using the many files in the dataManipulation folder you can clean the data to the form found in the ReducedData folder. 
+- Generating the Graphs and Models
+    - Run the individual files found in the plotting folder for specific results depending on what you are interested in 
+
+(Note that this is a work in progress and I plan for a more repeatable process in the near future)
+
+

@@ -77,4 +77,79 @@ print("===" * 25)
 
 forward_step_regression_ols(data, target_col="Overcrowding_Rate")
 
+"""
+Baseline R^2 is 0.0000
 
+1: Added: average_income
+   Current Features: ['average_income']
+   Model R^2: 0.1724
+===========================================================================
+2: Added: Overcrowding_Rate
+   Current Features: ['average_income', 'Overcrowding_Rate']
+   Model R^2: 0.3072
+===========================================================================
+3: Added: Bachelors_Or_Higher_PCT
+   Current Features: ['average_income', 'Overcrowding_Rate', 'Bachelors_Or_Higher_PCT']
+   Model R^2: 0.3197
+===========================================================================
+4: Added: Poverty_Rate_PCT
+   Current Features: ['average_income', 'Overcrowding_Rate', 'Bachelors_Or_Higher_PCT', 'Poverty_Rate_PCT']
+   Model R^2: 0.3255
+===========================================================================
+5: Added: Unemployment_PCT
+   Current Features: ['average_income', 'Overcrowding_Rate', 'Bachelors_Or_Higher_PCT', 'Poverty_Rate_PCT', 'Unempl
+oyment_PCT']
+   Model R^2: 0.3317
+===========================================================================
+6: Added: pct_subprime
+   Current Features: ['average_income', 'Overcrowding_Rate', 'Bachelors_Or_Higher_PCT', 'Poverty_Rate_PCT', 'Unempl
+oyment_PCT', 'pct_subprime']
+   Model R^2: 0.3320
+===========================================================================
+7: Added: Median_Household_Income
+   Current Features: ['average_income', 'Overcrowding_Rate', 'Bachelors_Or_Higher_PCT', 'Poverty_Rate_PCT', 'Unempl
+oyment_PCT', 'pct_subprime', 'Median_Household_Income']
+   Model R^2: 0.3354
+===========================================================================
+===========================================================================
+
+
+
+
+===========================================================================
+Baseline R^2 is 0.0000
+
+1: Added: Cost_Burden_PCT
+   Current Features: ['Cost_Burden_PCT']
+   Model R^2: 0.1394
+===========================================================================
+2: Added: Poverty_Rate_PCT
+   Current Features: ['Cost_Burden_PCT', 'Poverty_Rate_PCT']
+   Model R^2: 0.2178
+===========================================================================
+3: Added: Median_Household_Income
+   Current Features: ['Cost_Burden_PCT', 'Poverty_Rate_PCT', 'Median_Household_Income']
+   Model R^2: 0.2285
+===========================================================================
+4: Added: Unemployment_PCT
+   Current Features: ['Cost_Burden_PCT', 'Poverty_Rate_PCT', 'Median_Household_Income', 'Unemployment_PCT']
+   Model R^2: 0.2298
+===========================================================================
+5: Added: Bachelors_Or_Higher_PCT
+   Current Features: ['Cost_Burden_PCT', 'Poverty_Rate_PCT', 'Median_Household_Income', 'Unemployment_PCT', 'Bachel
+ors_Or_Higher_PCT']
+   Model R^2: 0.2380
+===========================================================================
+6: Added: average_income
+   Current Features: ['Cost_Burden_PCT', 'Poverty_Rate_PCT', 'Median_Household_Income', 'Unemployment_PCT', 'Bachel
+ors_Or_Higher_PCT', 'average_income']
+   Model R^2: 0.2384
+===========================================================================
+7: Added: pct_subprime
+   Current Features: ['Cost_Burden_PCT', 'Poverty_Rate_PCT', 'Median_Household_Income', 'Unemployment_PCT', 'Bachel
+ors_Or_Higher_PCT', 'average_income', 'pct_subprime']
+   Model R^2: 0.2457
+===========================================================================
+
+
+"""

@@ -1,9 +1,5 @@
 import geopandas         as gpd 
 import matplotlib.pyplot as plt
-import numpy             as np
-import pandas            as pd 
-import seaborn           as sns
-from   sklearn       import linear_model
 
 ## First we need to process the data from the csv so we will import then take the cols that we need
 
