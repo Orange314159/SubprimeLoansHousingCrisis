@@ -3,9 +3,12 @@ import pandas                         as pd
 import statsmodels.api                as sm 
 import statsmodels.formula.api        as smf
 from   statsmodels.iolib.summary2 import summary_col
+import sys 
 
+file_name = sys.argv[1]
 
-data = pd.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/merged_all_data.csv")
+data = pd.read_csv(f"{file_name}")
+## data = pd.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/merged_all_data.csv")
 
 
 def run_block_models(df, dependent_variable, independent_variables):

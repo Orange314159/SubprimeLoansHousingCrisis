@@ -1,6 +1,9 @@
 import polars as pl 
+import sys 
 
-df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/HousingData/clean_merged_data.csv")
+file_name = sys.argv[1]
+## df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/HousingData/clean_merged_data.csv")
+df = pl.read_csv(f"{file_name}")
 
 header_map = {
     "B25002": "OccupancyStatus",
@@ -49,4 +52,4 @@ for col in df.columns:
 
 df_updated = df.rename(exact_rename_map, strict=False)
 
-df_updated.write_csv("merged_housing_2.csv")
+df_updated.write_csv("mappedHeaders.csv")

@@ -1,7 +1,10 @@
+import sys 
 import polars as pl
 
+file_name = sys.argv[1]
+## df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/HousingData/ACS_5YR_ESTIMATES_DEMOGRAPHIC_TRACT_-85781284450125383.csv")
+df = pl.read_csv(f"{file_name}")
 
-df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/HousingData/ACS_5YR_ESTIMATES_DEMOGRAPHIC_TRACT_-85781284450125383.csv")
 
 df_reduced = df.select(
     ## add the G to the beginning 

@@ -37,9 +37,11 @@ import polars as pl
 
 ## Income comes from 
     # MedianHouseholdIncomeInThePast12MonthsEST1 --> Median Household income 
+import sys 
 
-
-df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/HousingData/merged_housing_2.csv")
+file_name = sys.argv[1] 
+## df = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/HousingData/merged_housing_2.csv")
+df = pl.read_csv(f"{file_name}")
 
 df_reduced = df.select(
     ## add the G to the beginning 

@@ -1,9 +1,11 @@
 import geopandas         as gpd 
 import matplotlib.pyplot as plt
-
+import sys 
 ## First we need to process the data from the csv so we will import then take the cols that we need
 
 
+file_name = sys.argv[1]
+merged_gdf = gpd.read_file(f"{file_name}")
 merged_gdf = gpd.read_file("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/output.GeoJSON")
 
 

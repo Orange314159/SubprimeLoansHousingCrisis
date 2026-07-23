@@ -1,3 +1,4 @@
+import sys
 import polars as pl
 
 ## I will include the schema for each year so the loading of the files happens much faster
@@ -46,9 +47,9 @@ schema_2004 = {
 }
 
 ## Now this is how you select which file you want to read 
-file_number = 2004
-file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/LoanData/HMDA_DATA_SET/HMDA_{file_number}/HMDA_{file_number}.csv"
-
+##file_number = 2004
+##file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/LoanData/HMDA_DATA_SET/HMDA_{file_number}/HMDA_{file_number}.csv"
+file_name = sys.argv[1]
 
 df = pl.read_csv(file_name, schema=schema_2004)
 

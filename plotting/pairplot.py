@@ -1,8 +1,11 @@
 import pandas as pd  
 import seaborn as sns 
 import matplotlib.pyplot as plt 
+import sys 
 
-df = pd.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/merged_loan_housing_data.csv")
+file_name = sys.argv[1]
+df = pd.read_csv(f"{file_name}")
+## df = pd.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/merged_loan_housing_data.csv")
 
 print(df.head())
 

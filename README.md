@@ -95,9 +95,32 @@ This plot shows the distribution of subprime loans over the period [2004 - 2007]
 - Collect the data
     - This repository does not contain the raw data used in the project due to the massive size of that data (60GB+). If you wish to download that data yourself you must go through the referenced links on the earlier parts of the README to download said data. -- NOTE I AM LOOKING INTO AUTOMATING THIS BUT HAVE NOT FOUND A RELIABLE WAY TO DO THIS YET 
 - Clean the data
-    - Using the many files in the dataManipulation folder you can clean the data to the form found in the ReducedData folder. 
+    - Using the many files in the dataManipulation folder you can clean the data to the form found in the ReducedData folder.
+    - Usage: `python3 dataManipulation/pipeToCSV.py <file_name>`
+    - Usage: `python3 dataManipulation/combineHouseSocioData.py <housing_data> <socioeconomic_data>`
+    - Usage: `python3 dataManipulation/combineLoanHousingData.py <loan_data> <housing_socio_data>`
+    - Usage: `python3 dataManipulation/compressReducedData.py <data_file>`
+    - Usage: `python3 dataManipulation/mapHeaders.py <file_name>`
+    - Usage: `python3 dataManipulation/mergeAllData.py <loan_data> <housing_socio_data> <race_data> <school_data>`
+    - Usage: `python3 dataManipulation/normalizeEarlyLoanData.py <file_name>`
+    - Usage: `python3 dataManipulation/normalizeEndLoanData.py <file_name>`
+    - Usage: `python3 dataManipulation/normalizeMiddleLoanData.py <file_name>`
+    - Usage: `python3 dataManipulation/readLoanData.py <file_name> <year>`
+    - Usage: `python3 dataManipulation/reduceMergedData.py <file_name>`
+    - Usage: `python3 dataManipulation/reduceRaceData.py <file_name>`
+    - Usage: `python3 dataManipulation/reduceSchoolData.py <file_name>`
+    - Usage: `python3 dataManipulation/removeQuotes.py <file_name>`
 - Generating the Graphs and Models
-    - Run the individual files found in the plotting folder for specific results depending on what you are interested in 
+    - Run the individual files found in the plotting folder for specific results depending on what you are interested in
+    - Usage: `python3 plotting/causalDiagram.py`
+    - Usage: `python3 plotting/pairplot.py <file_name>`
+    - Usage: `python3 plotting/plotGraph.py <file_name>`
+    - Usage: `python3 plotting/plotReducedGraph.py <file_name> <year>`
+    - Usage: `python3 plotting/plotSubprime.py <file_name> <year>` 
+    - Usage: `python3 plotting/regressions.py <file_name>`
+    - Usage: `python3 plotting/simplePlots.py <file_name>`
+    - Usage: `python3 plotting/stepwiseRegression.py <file_name>`
+    - Usage: `python3 plotting/subprimeRegressions.py <file_name>`
 
 (Note that this is a work in progress and I plan for a more repeatable process in the near future)
 

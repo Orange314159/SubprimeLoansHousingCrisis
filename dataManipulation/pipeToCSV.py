@@ -1,7 +1,7 @@
 import csv
-
-file_header  = '/home/matt/Desktop/Projects/InternshipProject/HMDA_DATA_SET/HMDA_'
-file_midler = '/HMDA_LAR_'
+import sys
+## file_header  = '/home/matt/Desktop/Projects/InternshipProject/HMDA_DATA_SET/HMDA_'
+## file_midler = '/HMDA_LAR_'
 
 def file_converter(input_file, output_file):
 
@@ -21,12 +21,17 @@ def file_converter(input_file, output_file):
 
 ## I only have to do this for the 2001 to 2006 files, because the rest of them are ok
 
-for i in range(6):
-    input_file  = f"{file_header}{i+2001}{file_midler}{i+2001}.txt"
-    output_file = f"{file_header}{i+2001}{file_midler}{i+2001}.csv"
-    print(f"Started file fixer on file:\t {input_file}")
-    file_converter(input_file, output_file)
-    print(f"File now converted to:\t\t {output_file}")
 
 
-print('\n\nFiles all converted')
+## for i in range(6):
+#input_file  = f"{file_header}{i+2001}{file_midler}{i+2001}.txt"
+input_file = sys.argv[1]  
+#output_file = f"{file_header}{i+2001}{file_midler}{i+2001}.csv"
+output_file = f"{input_file}.output"
+
+print(f"Started file fixer on file:\t {input_file}")
+file_converter(input_file, output_file)
+print(f"File now converted to:\t\t {output_file}")
+
+
+##print('\n\nFiles all converted')

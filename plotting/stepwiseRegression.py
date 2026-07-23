@@ -5,9 +5,11 @@ from sklearn.linear_model      import LinearRegression
 from sklearn.feature_selection import SequentialFeatureSelector
 from sklearn.metrics           import r2_score
 
+import sys
 
-
-data = pd.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/merged_loan_housing_data.csv")
+file_name = sys.argv[1]
+data = pd.read_csv(f"{file_name}")
+## data = pd.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/merged_loan_housing_data.csv")
 
 data = data.drop(columns=["GISJOIN", "weight"]).dropna()
 ## we don't want to use GISJOIN or weight to predict either of these variables

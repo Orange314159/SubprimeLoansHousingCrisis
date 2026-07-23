@@ -1,10 +1,16 @@
 import polars as pl
-
+import sys 
 ## I will combine the data from reduced data combined and the merged housing data
 
-loan_data = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/HMDA_Combined.csv")
+loan_file = sys.argv[1] 
+housing_socio_file = sys.argv[2]
 
-housing_socio_data = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/reducedHousing.csv")
+## loan_data = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/HMDA_Combined.csv")
+loan_data = pl.read_csv(f"{loan_file}")
+
+
+## housing_socio_data = pl.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/reducedHousing.csv")
+housing_socio_data = pl.read_csv(f"{housing_socio_file}")
 
 ## Check to make sure it works
 

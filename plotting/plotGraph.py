@@ -1,7 +1,7 @@
 import polars            as pl
 import geopandas         as gpd 
 import matplotlib.pyplot as plt 
-
+import sys 
 ## First we need to process the data from the csv so we will import then take the cols that we need
 
 schema_2000 = {
@@ -14,10 +14,11 @@ schema_2000 = {
     'sequence_number': pl.Int64
 }
 
-file_number = 2000
-file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_NORMAL.csv"
+## file_number = 2000
+## file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_NORMAL.csv"
+file_name = sys.argv[1] 
 
-df = pl.read_csv(file_name, schema=schema_2000)
+df = pl.read_csv(file_name, infer_schema_length=100000000)
 
 ## Process the HMDA data to construct a matching NHGIS GISJOIN string
 df_processed = df.with_columns([

@@ -1,13 +1,15 @@
 import polars            as pl 
 import geopandas         as gpd 
 import matplotlib.pyplot as plt
-
+import sys 
 ## First we need to process the data from the csv so we will import then take the cols that we need
 
 
-file_number = 2010
-file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_NORMAL.csv"
+## file_number = 2010
+## file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_NORMAL.csv"
 
+file_name = sys.argv[1]
+file_number = int(sys.argv[2])
 
 schema_early = {
     'year': pl.Int64, 'agency_code': pl.Int64, 'loan_type': pl.Int64, 'loan_amount': pl.String, 

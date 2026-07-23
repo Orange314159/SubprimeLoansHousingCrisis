@@ -1,12 +1,13 @@
+from numpy import trace
 import polars as pl 
 import polars.datatypes as pld
-
+import sys 
 ## First we need to process the data from the csv so we will import then take the cols that we need
 
 
 file_number = 2004
 file_name = f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_NORMAL.csv"
-
+file_name = sys.argv[1]
 
 schema_early = {
     'year': pl.Int64, 'agency_code': pl.Int64, 'loan_type': pl.Int64, 'loan_amount': pl.String, 
@@ -84,8 +85,8 @@ tract_averages = (
 
 #print(tract_averages.head())
 
-tract_averages.to_csv(f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_small.csv")
-
+## tract_averages.to_csv(f"/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/HMDA_{file_number}_small.csv")
+tract_averages.to_csv("reducedLoanDataCompressed.csv")
 
 
 

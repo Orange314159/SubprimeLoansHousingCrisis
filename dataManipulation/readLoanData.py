@@ -1,6 +1,6 @@
 import polars as pl
 import time
-
+import sys
 
 ## I will include the schema for each year so the loading of the files happens much faster
 
@@ -212,10 +212,11 @@ schemas = [schema_2000, schema_2001, schema_2002, schema_2003, schema_2004, sche
 
 ## Now this is how you select which file you want to read 
 start_time = time.perf_counter()
-file_number = 2009
-file_name = f"/home/matt/Desktop/Projects/InternshipProject/LoanData/HMDA_DATA_SET/HMDA_{file_number}/HMDA_{file_number}.csv"
-schema_number = file_number - 2000 ## because index 0 of the schemas is the year 2000
-
+## file_number = 2009
+## file_name = f"/home/matt/Desktop/Projects/InternshipProject/LoanData/HMDA_DATA_SET/HMDA_{file_number}/HMDA_{file_number}.csv"
+## schema_number = file_number - 2000 ## because index 0 of the schemas is the year 2000
+file_name = sys.argv[1]
+schema_number = int(sys.argv[2]) - 2000
 
 df = pl.read_csv(file_name, schema=schemas[schema_number])
 
