@@ -94,6 +94,7 @@ This plot shows the distribution of subprime loans over the period [2004 - 2007]
     - Depending on the files that you use there may be different required packages, but to be safe you can install them all with `pip install numpy scikitlearn pandas polars textwrap matplotlib networkx seaborn geopandas statsmodels bambi`
 - Collect the data
     - This repository does not contain the raw data used in the project due to the massive size of that data (60GB+). If you wish to download that data yourself you must go through the referenced links on the earlier parts of the README to download said data. -- NOTE I AM LOOKING INTO AUTOMATING THIS BUT HAVE NOT FOUND A RELIABLE WAY TO DO THIS YET 
+    - ** It is highly recommended to not get the data on your own, but to use the much reduced data in the `ReducedData/` folder ** 
 - Clean the data
     - Using the many files in the dataManipulation folder you can clean the data to the form found in the ReducedData folder.
     - Usage: `python3 dataManipulation/pipeToCSV.py <file_name>`
