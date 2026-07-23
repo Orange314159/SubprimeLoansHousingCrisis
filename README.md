@@ -83,6 +83,17 @@ This plot shows the distribution of subprime loans over the period [2004 - 2007]
 (Debian based Linux)
 ### Setup:
 
+#### Quick Start 
+If you are new to this repository it is recommended that you just use the compressed data in the `ReducedData` folder, but if you wish to create that data from scratch on your own you can do so by running the quick start file. 
+- First make sure you have python and pip installed (the script will ensure they are, but this is good practice). 
+- Next follow the links above to download the exact files included (don't change the name of the files, just use the default). Make sure to put all of these downloads in the quickstart folder. Don't worry about unzipping the files, the program will do that itself.
+- Finally, run the following commands:
+    - `cd quickStart`
+    - `chmod +x quick_setup.sh`
+    - `./quick_setup.sh`
+
+## Experienced Use 
+
 - Ensure you have Python and Git installed on your system
 - Access this repository
     - (Option A) Use the terminal with `git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis`

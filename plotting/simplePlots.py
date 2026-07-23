@@ -6,7 +6,7 @@ import sys
 
 file_name = sys.argv[1]
 merged_gdf = gpd.read_file(f"{file_name}")
-merged_gdf = gpd.read_file("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/output.GeoJSON")
+## merged_gdf = gpd.read_file("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/output.GeoJSON")
 
 
 #========== LEGACY CODE TO CREATE GEOJSON ================#

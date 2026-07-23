@@ -87,4 +87,7 @@ df_reduced = df.select(
 
 print(df_reduced.head())
 
-df_reduced.write_csv('/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/reducedHousing.csv')
+##df_reduced.write_csv('/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/reducedHousing.csv')
+df_reduced.write_csv('reducedHousing.csv')
+
+
