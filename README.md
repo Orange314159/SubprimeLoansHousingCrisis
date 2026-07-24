@@ -91,6 +91,8 @@ If you are new to this repository it is recommended that you just use the compre
     - `cd quickStart`
     - `chmod +x quick_setup.sh`
     - `./quick_setup.sh`
+- Again, note that this (quick) setup will likely take over an hour including the download times and at certain points the data may expand in excess of 40GB. (It will eventually reduce down to near 6GB)
+
 
 ## Experienced Use 
 
