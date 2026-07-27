@@ -94,26 +94,63 @@ If you are new to this repository it is recommended that you just use the compre
 - Again, note that this (quick) setup will likely take over an hour including the download times and at certain points the data may expand in excess of 40GB. (It will eventually reduce down to near 6GB)
 
 
-## Experienced Use 
+## Experienced Use
 
 - Ensure you have Python and Git installed on your system
-    - `sudo apt install python3 git pip`
+
+```bash
+    sudo apt install python3 git pip
+```
+
 - Access this repository
-    - (Option A) Use the terminal with `git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis`
-    - (Option B) Download the zip file through the code dropdown near the top of this page and unzip the file
+    - **(Option A)** Use the terminal:
+
+```bash
+        git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis
+```
+
+    - **(Option B)** Download the zip file through the code dropdown near the top of this page and unzip the file
+
 - Create a virtual environment to use python in
-    - In the terminal run `python -m venv .venv` This will create your environment
-    - Then run `source .venv/bin/activate` to ensure that you are now using that environment
-- Install the required packages for this project 
-    - Depending on the files that you use there may be different required packages, but to be safe you can install them all with `pip install numpy scikitlearn pandas polars textwrap matplotlib networkx seaborn geopandas statsmodels bambi`
+
+```bash
+    python -m venv .venv
+```
+
+    Then activate it:
+
+```bash
+    source .venv/bin/activate
+```
+
+- Install the required packages for this project
+
+    Depending on the files you use there may be different required packages, but to be safe you can install them all with:
+
+```bash
+    pip install numpy scikitlearn pandas polars matplotlib networkx seaborn geopandas statsmodels bambi pyarrow
+```
+
 - Generating the Graphs and Models
-    - Run the individual files found in the plotting folder for specific results depending on what you are interested in
-    - python3 plotting/causalDiagram.py
-    - python3 plotting/pairplot.py ReducedData/merged_all_data.csv
-    - python3 plotting/regressions.py ReducedData/merged_all_data.csv
-    - python3 plotting/stepwiseRegression.py ReducedData/merged_all_data.csv
-    - python3 plotting/subprimeRegressions.py ReducedData/merged_all_data.csv
 
-(Note that this is a work in progress and I plan for a more repeatable process in the near future)
+    Run the individual files found in the plotting folder for specific results depending on what you are interested in:
 
+```bash
+    python3 plotting/causalDiagram.py
+```
 
+```bash
+    python3 plotting/pairplot.py ReducedData/merged_all_data.csv
+```
+
+```bash
+    python3 plotting/regressions.py ReducedData/merged_all_data.csv
+```
+
+```bash
+    python3 plotting/stepwiseRegression.py ReducedData/merged_all_data.csv
+```
+
+```bash
+    python3 plotting/subprimeRegressions.py ReducedData/merged_all_data.csv
+```
