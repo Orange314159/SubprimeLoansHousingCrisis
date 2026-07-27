@@ -9,7 +9,7 @@ merged_gdf = gpd.read_file(f"{file_name}")
 ## merged_gdf = gpd.read_file("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedLoanData/output.GeoJSON")
 
 
-#========== LEGACY CODE TO CREATE GEOJSON ================#
+#========== LEGACY CODE TO CREATE GEOJSON ===============#
 #tract_averages = pd.read_csv(file_name)
 
 #local_path = "/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ShapeData/nhgis0001_shapefile_tl2000_us_tract_2000.zip"
