@@ -97,6 +97,7 @@ If you are new to this repository it is recommended that you just use the compre
 ## Experienced Use 
 
 - Ensure you have Python and Git installed on your system
+    - `sudo apt install python3 git pip`
 - Access this repository
     - (Option A) Use the terminal with `git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis`
     - (Option B) Download the zip file through the code dropdown near the top of this page and unzip the file
