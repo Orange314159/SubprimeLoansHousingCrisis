@@ -99,27 +99,27 @@ If you are new to this repository it is recommended that you just use the compre
 - Ensure you have Python and Git installed on your system
 
 ```bash
-    sudo apt install python3 git pip
+sudo apt install python3 git pip
 ```
 
 - Access this repository
    - **(Option A)** Use the terminal:
 
 ```bash
-        git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis
+git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis
 ```
    - **(Option B)** Download the zip file through the code dropdown near the top of this page and unzip the file
 
 - Create a virtual environment to use python in
 
 ```bash
-    python -m venv .venv
+python -m venv .venv
 ```
 
 Then activate it:
 
 ```bash
-    source .venv/bin/activate
+source .venv/bin/activate
 ```
 
 - Install the required packages for this project
