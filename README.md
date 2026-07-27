@@ -103,13 +103,12 @@ If you are new to this repository it is recommended that you just use the compre
 ```
 
 - Access this repository
-    - **(Option A)** Use the terminal:
+   - **(Option A)** Use the terminal:
 
 ```bash
         git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis
 ```
-
-    - **(Option B)** Download the zip file through the code dropdown near the top of this page and unzip the file
+   - **(Option B)** Download the zip file through the code dropdown near the top of this page and unzip the file
 
 - Create a virtual environment to use python in
 
@@ -117,7 +116,7 @@ If you are new to this repository it is recommended that you just use the compre
     python -m venv .venv
 ```
 
-    Then activate it:
+Then activate it:
 
 ```bash
     source .venv/bin/activate
@@ -128,7 +127,7 @@ If you are new to this repository it is recommended that you just use the compre
     Depending on the files you use there may be different required packages, but to be safe you can install them all with:
 
 ```bash
-    pip install numpy scikitlearn pandas polars matplotlib networkx seaborn geopandas statsmodels bambi pyarrow
+pip install numpy scikitlearn pandas polars matplotlib networkx seaborn geopandas statsmodels bambi pyarrow
 ```
 
 - Generating the Graphs and Models
@@ -136,21 +135,21 @@ If you are new to this repository it is recommended that you just use the compre
     Run the individual files found in the plotting folder for specific results depending on what you are interested in:
 
 ```bash
-    python3 plotting/causalDiagram.py
+python3 plotting/causalDiagram.py
 ```
 
 ```bash
-    python3 plotting/pairplot.py ReducedData/merged_all_data.csv
+python3 plotting/pairplot.py ReducedData/merged_all_data.csv
 ```
 
 ```bash
-    python3 plotting/regressions.py ReducedData/merged_all_data.csv
+python3 plotting/regressions.py ReducedData/merged_all_data.csv
 ```
 
 ```bash
-    python3 plotting/stepwiseRegression.py ReducedData/merged_all_data.csv
+python3 plotting/stepwiseRegression.py ReducedData/merged_all_data.csv
 ```
 
 ```bash
-    python3 plotting/subprimeRegressions.py ReducedData/merged_all_data.csv
+python3 plotting/subprimeRegressions.py ReducedData/merged_all_data.csv
 ```
