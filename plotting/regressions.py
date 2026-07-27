@@ -7,6 +7,8 @@ import sys
 file_name = sys.argv[1]
 data = pd.read_csv(f"{file_name}")
 
+data['Median_Household_Income'] /= 1000
+
 def run_block_models(df, dependent_variable, independent_variables):
     formula = f"{dependent_variable} ~ {independent_variables}" ##  depending on what variables are being used, the formula might look different
 
@@ -65,8 +67,8 @@ models_cost = [model_cost_baseline, model_cost_economic, model_cost_deomgrap, mo
 names = ['Baseline', '(2)', '(3)', '(4)']
 
 variables = economic_variables_l + demographic_variables_l + ['pct_subprime']
-table = generate_regression_table(models, names, variables, title="Regression Results (Cost Burden)")  
-print(table)
+table2 = generate_regression_table(models_cost, names, variables, title="Regression Results (Cost Burden)")  
+print(table2)
 
 print("Aliases:")
 print("(2) --> Baseline + Economic")
@@ -75,7 +77,7 @@ print("(4) --> All Variables")
 
 
 """
-             Regression Results (Overcrowding Rate)
+  Regression Results (Overcrowding Rate)
 =================================================================
                          Baseline    (2)       (3)        (4)    
 -----------------------------------------------------------------
@@ -83,7 +85,7 @@ Unemployment_PCT                  -0.0002**            -0.0008***
                                   (0.0001)             (0.0001)  
 Poverty_Rate_PCT                  0.0009***            0.0002*** 
                                   (0.0000)             (0.0000)  
-Median_Household_Income           0.0000***            0.0000*** 
+Median_Household_Income           0.0001***            0.0001*** 
                                   (0.0000)             (0.0000)  
 white_pct                                   -0.0013*** -0.0013***
                                             (0.0000)   (0.0000)  
@@ -109,39 +111,39 @@ Aliases:
 (2) --> Baseline + Economic
 (3) --> Baseline + Demographic
 (4) --> All Variables
-                Regression Results (Cost Burden)
-=================================================================
-                         Baseline    (2)       (3)        (4)    
------------------------------------------------------------------
-Unemployment_PCT                  -0.0002**            -0.0008***
-                                  (0.0001)             (0.0001)  
-Poverty_Rate_PCT                  0.0009***            0.0002*** 
-                                  (0.0000)             (0.0000)  
-Median_Household_Income           0.0000***            0.0000*** 
-                                  (0.0000)             (0.0000)  
-white_pct                                   -0.0013*** -0.0013***
-                                            (0.0000)   (0.0000)  
-black_pct                                   -0.0012*** -0.0011***
-                                            (0.0000)   (0.0000)  
-hispanic_pct                                -0.0002*** -0.0002***
-                                            (0.0000)   (0.0000)  
-undergrad_pct                               -0.0004*** -0.0005***
-                                            (0.0000)   (0.0000)  
-pct_subprime            0.1562*** 0.1029*** 0.0062     0.0024    
-                        (0.0048)  (0.0065)  (0.0074)   (0.0073)  
-Intercept               0.0138*** 0.0039*** 0.1438***  0.1425*** 
-                        (0.0005)  (0.0012)  (0.0028)   (0.0030)  
-R-squared               0.0270    0.0581    0.3968     0.4044    
-R-squared Adj.          0.0270    0.0580    0.3967     0.4043    
-Adj. R-squared          0.027     0.058     0.397      0.404     
-N                       44611     44489     44611      44489     
-R-squared               0.027     0.058     0.397      0.404     
-=================================================================
+                   Regression Results (Cost Burden)
+=======================================================================
+                          Baseline      (2)         (3)         (4)    
+-----------------------------------------------------------------------
+Unemployment_PCT                    0.2010***               -0.0043    
+                                    (0.0158)                (0.0156)   
+Poverty_Rate_PCT                    -0.0059                 -0.2112*** 
+                                    (0.0075)                (0.0082)   
+Median_Household_Income             0.0786***               0.0266***  
+                                    (0.0021)                (0.0022)   
+white_pct                                       -0.2518***  -0.2754*** 
+                                                (0.0065)    (0.0056)   
+black_pct                                       -0.1558***  -0.1247*** 
+                                                (0.0071)    (0.0064)   
+hispanic_pct                                    -0.0795***  -0.0678*** 
+                                                (0.0078)    (0.0067)   
+undergrad_pct                                   0.1269***   0.0525***  
+                                                (0.0036)    (0.0039)   
+pct_subprime            -36.8989*** -12.3028*** -19.8165*** -25.1691***
+                        (1.0786)    (1.4482)    (1.7683)    (1.6327)   
+Intercept               20.2390***  10.9132***  32.2269***  37.7072*** 
+                        (0.1329)    (0.3008)    (0.7134)    (0.6408)   
+R-squared               0.0291      0.0722      0.2389      0.2981     
+R-squared Adj.          0.0291      0.0721      0.2389      0.2980     
+Adj. R-squared          0.029       0.072       0.239       0.298      
+N                       44716       44489       44716       44489      
+R-squared               0.029       0.072       0.239       0.298      
+=======================================================================
 Standard errors in parentheses.
 * p<.1, ** p<.05, ***p<.01
 Aliases:
 (2) --> Baseline + Economic
 (3) --> Baseline + Demographic
 (4) --> All Variables
-"""
 
+"""

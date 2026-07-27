@@ -106,36 +106,13 @@ If you are new to this repository it is recommended that you just use the compre
     - Then run `source .venv/bin/activate` to ensure that you are now using that environment
 - Install the required packages for this project 
     - Depending on the files that you use there may be different required packages, but to be safe you can install them all with `pip install numpy scikitlearn pandas polars textwrap matplotlib networkx seaborn geopandas statsmodels bambi`
-- Collect the data
-    - This repository does not contain the raw data used in the project due to the massive size of that data (60GB+). If you wish to download that data yourself you must go through the referenced links on the earlier parts of the README to download said data. -- NOTE I AM LOOKING INTO AUTOMATING THIS BUT HAVE NOT FOUND A RELIABLE WAY TO DO THIS YET 
-    - ** It is highly recommended to not get the data on your own, but to use the much reduced data in the `ReducedData/` folder ** 
-- Clean the data
-    - Using the many files in the dataManipulation folder you can clean the data to the form found in the ReducedData folder.
-    - Usage: `python3 dataManipulation/pipeToCSV.py <file_name>`
-    - Usage: `python3 dataManipulation/combineHouseSocioData.py <housing_data> <socioeconomic_data>`
-    - Usage: `python3 dataManipulation/combineLoanHousingData.py <loan_data> <housing_socio_data>`
-    - Usage: `python3 dataManipulation/compressReducedData.py <data_file>`
-    - Usage: `python3 dataManipulation/mapHeaders.py <file_name>`
-    - Usage: `python3 dataManipulation/mergeAllData.py <loan_data> <housing_socio_data> <race_data> <school_data>`
-    - Usage: `python3 dataManipulation/normalizeEarlyLoanData.py <file_name>`
-    - Usage: `python3 dataManipulation/normalizeEndLoanData.py <file_name>`
-    - Usage: `python3 dataManipulation/normalizeMiddleLoanData.py <file_name>`
-    - Usage: `python3 dataManipulation/readLoanData.py <file_name> <year>`
-    - Usage: `python3 dataManipulation/reduceMergedData.py <file_name>`
-    - Usage: `python3 dataManipulation/reduceRaceData.py <file_name>`
-    - Usage: `python3 dataManipulation/reduceSchoolData.py <file_name>`
-    - Usage: `python3 dataManipulation/removeQuotes.py <file_name>`
 - Generating the Graphs and Models
     - Run the individual files found in the plotting folder for specific results depending on what you are interested in
-    - Usage: `python3 plotting/causalDiagram.py`
-    - Usage: `python3 plotting/pairplot.py <file_name>`
-    - Usage: `python3 plotting/plotGraph.py <file_name>`
-    - Usage: `python3 plotting/plotReducedGraph.py <file_name> <year>`
-    - Usage: `python3 plotting/plotSubprime.py <file_name> <year>` 
-    - Usage: `python3 plotting/regressions.py <file_name>`
-    - Usage: `python3 plotting/simplePlots.py <file_name>`
-    - Usage: `python3 plotting/stepwiseRegression.py <file_name>`
-    - Usage: `python3 plotting/subprimeRegressions.py <file_name>`
+    - python3 plotting/causalDiagram.py
+    - python3 plotting/pairplot.py ReducedData/merged_all_data.csv
+    - python3 plotting/regressions.py ReducedData/merged_all_data.csv
+    - python3 plotting/stepwiseRegression.py ReducedData/merged_all_data.csv
+    - python3 plotting/subprimeRegressions.py ReducedData/merged_all_data.csv
 
 (Note that this is a work in progress and I plan for a more repeatable process in the near future)
 

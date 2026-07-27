@@ -5,8 +5,7 @@ import sys
 ## same things i did in data science course
 if __name__ == '__main__':
     file_name = sys.argv[1]
-    df = pd.read_csv(f"{file_name}")
-    ## df = pd.read_csv("/home/matt/Desktop/Projects/SubprimeLoansHousingCrisis/ReducedData/merged_loan_housing_data.csv").dropna()
+    df = pd.read_csv(f"{file_name}").dropna()
 
     model_poly_1 = bmb.Model("Overcrowding_Rate ~ pct_subprime", df, family="gaussian")
     idata_poly_1 = model_poly_1.fit(record_likelihood=True)
