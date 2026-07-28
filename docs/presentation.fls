@@ -420,6 +420,15 @@ INPUT ./logo.jpeg
 INPUT ./logo.jpeg
 INPUT ./logo.jpeg
 INPUT ./logo.jpeg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT ./960px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg
 INPUT ./960px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg
@@ -507,6 +516,14 @@ INPUT ./logo.jpeg
 INPUT ./logo.jpeg
 INPUT ./logo.jpeg
 INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
+INPUT ./logo.jpeg
 OUTPUT presentation.nav
 OUTPUT presentation.toc
 OUTPUT presentation.snm
@@ -519,3 +536,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

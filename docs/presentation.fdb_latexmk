@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1785180454.00446 "presentation.tex" "presentation.pdf" "presentation" 1785180455.08162 0
+["pdflatex"] 1785268164.60783 "presentation.tex" "presentation.pdf" "presentation" 1785268165.77227 2
   "/etc/texmf/web2c/texmf.cnf" 1784133114.16911 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -23,6 +23,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm" 1336178347 1696 aaa5bbd1f47f001247d42218ce371101 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm" 1336178347 1676 fb6c6a335484692abff897d6e8965829 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
@@ -31,6 +32,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb" 1248133631 24420 52dbb8e8aa0069a1b987309557f8d303 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1248133631 25168 33771b85f45c82138dd7745db7092d1c ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -211,13 +213,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1784211775 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1784211855 3642005 535e4afc79f485fbd339bf39ba1c34f3 ""
   "960px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg" 1785170449.36426 419348 7d947b09534846956461f9bda0ea60be ""
+  "CDO_-_FCIC_and_IMF_Diagram.png" 0 -1 0 ""
   "PIT Trend.png" 1785180393.95078 83038 331e26c58daefda230c17bbd9e1bfcac ""
   "SubprimeLoanSpread2006.png" 1785180396.1908 782305 7f46e8540478b3f26227e89d1f2acc9b ""
   "logo.jpeg" 1785180391.89197 10657 1184016922cc3b3efd3369ac7c23763d ""
-  "presentation.aux" 1785180455.024 1851 97126c382d6e481c57976def502c453b "pdflatex"
-  "presentation.nav" 1785180455.02475 1202 a971439ba5eedf62b158aa4c3f07763d "pdflatex"
-  "presentation.out" 1785180454.47757 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentation.tex" 1785180451.21919 11170 ba58e322cfeba898151b9030d958fb01 ""
+  "presentation.aux" 1785268165.71133 2109 2979b9e8e4fa267a2557952810574c09 "pdflatex"
+  "presentation.nav" 1785268165.71133 1388 37fb167c90003b6656a249083ce3750a "pdflatex"
+  "presentation.out" 1785268165.10651 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentation.tex" 1785268153.61924 12089 419e15adb6a120cb13f20f56011d1c16 ""
   (generated)
   "presentation.aux"
   "presentation.log"

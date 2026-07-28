@@ -83,7 +83,7 @@ This plot shows the distribution of subprime loans over the period [2004 - 2007]
 (Debian based Linux)
 ### Setup:
 
-#### Quick Start 
+#### Self Download Data
 If you are new to this repository it is recommended that you just use the compressed data in the `ReducedData` folder, but if you wish to create that data from scratch on your own you can do so by running the quick start file. 
 - First make sure you have python and pip installed (the script will ensure they are, but this is good practice). 
 - Next follow the links above to download the exact files included (don't change the name of the files, just use the default). Make sure to put all of these downloads in the quickstart folder. Don't worry about unzipping the files, the program will do that itself.
@@ -94,7 +94,7 @@ If you are new to this repository it is recommended that you just use the compre
 - Again, note that this (quick) setup will likely take over an hour including the download times and at certain points the data may expand in excess of 40GB. (It will eventually reduce down to near 6GB)
 
 
-## Experienced Use
+## Reproduce Results
 
 - Ensure you have Python and Git installed on your system
 
@@ -108,7 +108,7 @@ sudo apt install python3 git pip
 ```bash
 git clone https://github.com/Orange314159/SubprimeLoansHousingCrisis
 ```
-   - **(Option B)** Download the zip file through the code dropdown near the top of this page and unzip the file
+   - **(Option B)** Download the zip file through the code drop down near the top of this page and unzip the file
 
 - Create a virtual environment to use python in
 
@@ -153,3 +153,18 @@ python3 plotting/stepwiseRegression.py ReducedData/merged_all_data.csv
 ```bash
 python3 plotting/subprimeRegressions.py ReducedData/merged_all_data.csv
 ```
+
+- In order to generate the documents run the following commands
+
+```bash
+sudo apt update && sudo apt install texlive-full
+```
+
+```bash
+pdflatex docs/presentation.tex
+```
+
+```bash
+pdflatex docs/paper.tex 
+```
+

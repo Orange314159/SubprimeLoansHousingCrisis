@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{duke_predatory_lending}
+{American Predatory Lending Project}.
+\newblock Subprime lending: Evolution of mortgage lending.
+\newblock \url{https://predatorylending.duke.edu/business-analysis/evolution-of-mortgage-lending/subprime-lending/}, 2020.
+\newblock Accessed: 2026-07-28.
+
+\bibitem{cfpb_hmda_2007_2010}
+{Consumer Financial Protection Bureau}.
+\newblock Home mortgage disclosure act (hmda) data (2007--2010).
+\newblock \url{https://www.consumerfinance.gov/data-research/hmda/}, 2010.
+
+\bibitem{openicpsr_hmda_2000_2006}
+{Inter-university Consortium for Political and Social Research}.
+\newblock Home mortgage disclosure act data collection (2000--2006).
+\newblock \url{https://doi.org/10.3886/E151921V1}, 2006.
+
+\bibitem{ipums_nhgis}
+Steven Manson, Jonathan Schroeder, David Van~Riper, Tracy Kugler, and Steven Ruggles.
+\newblock Ipums national historical geographic information system: Version 17.0 [census tract boundaries].
+\newblock \url{https://doi.org/10.18128/D050.V17.0}, 2022.
+
+\bibitem{mian2009consequences}
+Atif Mian and Amir Sufi.
+\newblock The consequences of mortgage credit expansion: Evidence from the 2007 mortgage default crisis.
+\newblock {\em The Quarterly Journal of Economics}, 124(4):1449--1496, 2009.
+\newblock DOI: 10.1162/qjec.2009.124.4.1449.
+
+\bibitem{naeh_state_of_homelessness}
+{National Alliance to End Homelessness}.
+\newblock State of homelessness report.
+\newblock Technical report, National Alliance to End Homelessness, 2023.
+\newblock \url{https://endhomelessness.org/state-of-homelessness/}.
+
+\bibitem{nlihc_problem}
+{National Low Income Housing Coalition}.
+\newblock The problem: Why we care.
+\newblock \url{https://nlihc.org/explore-issues/why-we-care/problem}, 2023.
+\newblock Accessed: 2026-07-28.
+
+\bibitem{census_acs_2016_2020}
+{U.S. Census Bureau}.
+\newblock American community survey (acs) 5-year estimates (2016--2020).
+\newblock \url{https://www.census.gov/programs-surveys/acs}, 2021.
+
+\end{thebibliography}
