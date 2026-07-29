@@ -1,0 +1,30 @@
+\frametitle{Markdown}
+Markdown was invented to be a simple format that is easily parseable by any application. It is used in software such as:
+
+\vspace{0.5cm}
+
+\begin{columns}
+\column{0.4\textwidth}
+    \begin{itemize}
+        \item Google Docs
+        \item Obsidian
+        \item GitHub
+        \item Stack Exchange
+    \end{itemize}
+
+\column{0.55\textwidth}
+\begin{block}{Markdown}
+
+\begin{verbatim}
+## Quick start
+1. Some list first column
+2. something `important`
+```python
+some code
+```
+\end{verbatim}
+\end{block}
+
+
+\end{columns}
+
