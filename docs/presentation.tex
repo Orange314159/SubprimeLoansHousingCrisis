@@ -1,7 +1,8 @@
-\documentclass[15pt]{beamer}
+\documentclass[15pt, aspectratio=169]{beamer}
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{adjustbox}
 \usetikzlibrary{positioning, arrows.meta}
 
 \usetheme{Berkeley}
@@ -25,7 +26,7 @@
 
 \logo{\begin{tikzpicture}
         \hspace{-0.78cm}
-        \raisebox{-0.73cm}{\includegraphics[width=0.12\textwidth]{logo.jpeg}}
+        \raisebox{-0.73cm}{\includegraphics[width=0.094\textwidth]{logo.jpeg}}
 \end{tikzpicture}}
 
 %% finally
@@ -51,7 +52,8 @@
 \end{frame}
 
 \begin{frame}{MBS and CDOs} %%% https://en.wikipedia.org/wiki/File:CDO_-_FCIC_and_IMF_Diagram.png
-    \includegraphics[width=\textwidth]{CDO_-_FCIC_and_IMF_Diagram.png}
+\centering
+    \includegraphics[height=\textheight]{CDO_-_FCIC_and_IMF_Diagram.png}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,7 +81,7 @@
     
     \column{\textwidth}
     %% David Shankbone, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons
-    \includegraphics[width=0.5\textwidth]{960px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg}
+    \includegraphics[width=0.5\textwidth, height=\textheight]{960px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg}
 \end{columns}
 
 
@@ -217,7 +219,7 @@
 \centering
 \setlength{\tabcolsep}{2.5pt}
 \renewcommand{\arraystretch}{0.72}
-\resizebox{\linewidth}{!}{%
+\resizebox{0.77\linewidth}{!}{%
 {\scriptsize
 \begin{tabular}{l c c c c}
 \toprule
@@ -246,8 +248,6 @@ R-squared                 & 0.0270      & 0.0581     & 0.3968     & 0.4044     \
 Adj. R-squared            & 0.0270      & 0.0580     & 0.3967     & 0.4043     \\
 N                         & 44,611      & 44,489     & 44,611     & 44,489     \\
 \bottomrule
-\multicolumn{5}{l}{\tiny Standard errors in parentheses. * $p<0.1$, ** $p<0.05$, *** $p<0.01$} \\
-\multicolumn{5}{l}{\tiny (2) Baseline + Economic, (3) Baseline + Demographic, (4) All Variables}
 \end{tabular}
 }
 }
@@ -262,7 +262,7 @@ N                         & 44,611      & 44,489     & 44,611     & 44,489     \
 \centering
 \setlength{\tabcolsep}{2.5pt}
 \renewcommand{\arraystretch}{0.72}
-\resizebox{\linewidth}{!}{%
+\resizebox{0.83\linewidth}{!}{%
 {\scriptsize
 \begin{tabular}{l c c c c}
 \toprule
@@ -291,8 +291,6 @@ R-squared                 & 0.0291      & 0.0722      & 0.2389     & 0.2981     
 Adj. R-squared            & 0.0291      & 0.0721      & 0.2389     & 0.2980     \\
 N                         & 44,716      & 44,489      & 44,716     & 44,489     \\
 \bottomrule
-\multicolumn{5}{l}{\tiny Standard errors in parentheses. * $p<0.1$, ** $p<0.05$, *** $p<0.01$} \\
-\multicolumn{5}{l}{\tiny (2) Baseline + Economic, (3) Baseline + Demographic, (4) All Variables}
 \end{tabular}
 }
 }
