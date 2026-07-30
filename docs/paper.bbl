@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{duke_predatory_lending}
 {American Predatory Lending Project}.
@@ -16,15 +16,26 @@
 \newblock Home mortgage disclosure act data collection (2000--2006).
 \newblock \url{https://doi.org/10.3886/E151921V1}, 2006.
 
+\bibitem{leopold2016improving}
+Josh Leopold, Mary~K. Cunningham, Lily Posey, and Tiffany Manuel.
+\newblock Improving measures of housing insecurity: A path forward.
+\newblock Technical report, Urban Institute, Washington, DC, November 2016.
+\newblock Accessed: 2026-07-28. COI: 20.500.12592/t782r6.
+
 \bibitem{lioudis_lehman_brothers}
 Nick Lioudis.
 \newblock The collapse of lehman brothers: A case study.
-\newblock Investopedia.
+\newblock Investopedia, 2026.
 
 \bibitem{ipums_nhgis}
 Steven Manson, Jonathan Schroeder, David Van~Riper, Tracy Kugler, and Steven Ruggles.
 \newblock Ipums national historical geographic information system: Version 17.0 [census tract boundaries].
 \newblock \url{https://doi.org/10.18128/D050.V17.0}, 2022.
+
+\bibitem{mayer2008subprime}
+Christopher~J. Mayer and Karen~M. Pence.
+\newblock Subprime mortgages: what, where, and to whom?
+\newblock Finance and Economics Discussion Series 2008-29, Board of Governors of the Federal Reserve System (U.S.), 2008.
 
 \bibitem{mian2009consequences}
 Atif Mian and Amir Sufi.

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex paper"] 1785358786.97469 "paper.aux" "paper.bbl" "paper" 1785358787.47948 0
-  "./references.bib" 1785358784.7106 3497 5cbdeb1d82ceaa7d717dc0dc171fdb84 ""
+["bibtex paper"] 1785427790.00148 "paper.aux" "paper.bbl" "paper" 1785427831.54687 0
+  "./references.bib" 1785427789.24799 3522 bac0bb2c561240e856ef69ca3f271294 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "paper.aux" 1785358787.31461 3263 a749607a7ca84e6a37bb82d8a452b221 "pdflatex"
+  "paper.aux" 1785427831.38131 4237 f8abb10dc312ca9da2da1e3ddfb1b90d "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1785358787.04594 "paper.tex" "paper.pdf" "paper" 1785358787.4796 0
+["pdflatex"] 1785427830.92781 "paper.tex" "paper.pdf" "paper" 1785427831.54699 0
   "/etc/texmf/web2c/texmf.cnf" 1784133114.16911 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -75,10 +75,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1784211775 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1784211855 3642005 535e4afc79f485fbd339bf39ba1c34f3 ""
-  "paper.aux" 1785358787.31461 3263 a749607a7ca84e6a37bb82d8a452b221 "pdflatex"
-  "paper.bbl" 1785358787.04333 2127 5b209ce6bb9c68ec4ceadbf791d94449 "bibtex paper"
-  "paper.out" 1785358787.31591 2196 05d1fa1c313c5f03e1ef2d4335cbca72 "pdflatex"
-  "paper.tex" 1785358756.93349 15133 7d15fd45c31bca1b1677de6a16f1ca65 ""
+  "SubprimeLoanSpread2006.png" 1785180396.1908 782305 7f46e8540478b3f26227e89d1f2acc9b ""
+  "pairplot.png" 1785427830.76008 298878 1defc4779f18855ff9a27068a660053d ""
+  "paper.aux" 1785427831.38131 4237 f8abb10dc312ca9da2da1e3ddfb1b90d "pdflatex"
+  "paper.bbl" 1785427790.069 2682 53fcc9bb45cff966fc9f4b301b6e7f97 "bibtex paper"
+  "paper.out" 1785427831.38274 2596 6f862b399914c3065052f2450bd5b4ea "pdflatex"
+  "paper.tex" 1785427767.97983 18135 355af29fe909edfdd0af3266ea7addf0 ""
   (generated)
   "paper.aux"
   "paper.log"

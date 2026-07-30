@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.16)  29 JUL 2026 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.16)  30 JUL 2026 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -217,13 +217,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 13.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 58.
+(Font)              <7> on input line 62.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 58.
- [3] [4] [5] (./paper.bbl
-Underfull \hbox (badness 4995) in paragraph at lines 4--8
+(Font)              <5> on input line 62.
+ [4] [5] [6] (./paper.bbl
+Underfull \hbox (badness 3758) in paragraph at lines 4--8
 []\OT1/cmr/m/n/10 American Preda-tory Lend-ing Project.  Sub-prime lend-ing: Evo-
  []
 
@@ -237,39 +237,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 \OT1/cmtt/m/n/10 edu / business-[]analysis / evolution-[]of-[]mortgage-[]lending /
  []
 
-[6
+[7
 
 ]
-Underfull \hbox (badness 1924) in paragraph at lines 10--13
+Underfull \hbox (badness 1226) in paragraph at lines 10--13
 []\OT1/cmr/m/n/10 Consumer Fi-nan-cial Pro-tec-tion Bu-reau.  Home mort-gage dis-clo-sure
  []
 
+)
+<SubprimeLoanSpread2006.png, id=150, 1445.4pt x 867.24pt>
+File: SubprimeLoanSpread2006.png Graphic file (type png)
+<use SubprimeLoanSpread2006.png>
+Package pdftex.def Info: SubprimeLoanSpread2006.png  used on input line 173.
+(pdftex.def)             Requested size: 345.0pt x 206.99059pt.
+ [8] [9 <./SubprimeLoanSpread2006.png>]
+<pairplot.png, id=171, 1344.9447pt x 694.5147pt>
+File: pairplot.png Graphic file (type png)
+<use pairplot.png>
+Package pdftex.def Info: pairplot.png  used on input line 182.
+(pdftex.def)             Requested size: 345.0pt x 178.15334pt.
+ [10
 
-Underfull \hbox (badness 1867) in paragraph at lines 10--13
-\OT1/cmr/m/n/10 act (hmda) data (2007--2010).  []$\OT1/cmtt/m/n/10 https : / / www . consumerfinance . gov /
- []
-
-) [7] (./paper.aux)
+ <./pairplot.png>] (./paper.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 05D1FA1C313C5F03E1EF2D4335CBCA72;2196.
+(rerunfilecheck)             Checksum: 6F862B399914C3065052F2450BD5B4EA;2596.
  ) 
 Here is how much of TeX's memory you used:
- 8534 strings out of 467533
- 131637 string characters out of 5422138
- 561511 words of memory out of 5000000
- 37339 multiletter control sequences out of 15000+600000
+ 8565 strings out of 467533
+ 132265 string characters out of 5422138
+ 559778 words of memory out of 5000000
+ 37361 multiletter control sequences out of 15000+600000
  632182 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,1038b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,1346b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (7 pages, 155064 bytes).
+Output written on paper.pdf (10 pages, 1130714 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 

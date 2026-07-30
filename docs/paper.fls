@@ -119,6 +119,16 @@ INPUT ./paper.bbl
 INPUT ./paper.bbl
 INPUT paper.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./SubprimeLoanSpread2006.png
+INPUT ./SubprimeLoanSpread2006.png
+INPUT ./SubprimeLoanSpread2006.png
+INPUT ./SubprimeLoanSpread2006.png
+INPUT ./SubprimeLoanSpread2006.png
+INPUT ./pairplot.png
+INPUT ./pairplot.png
+INPUT ./pairplot.png
+INPUT ./pairplot.png
+INPUT ./pairplot.png
 INPUT paper.aux
 INPUT ./paper.out
 INPUT ./paper.out
