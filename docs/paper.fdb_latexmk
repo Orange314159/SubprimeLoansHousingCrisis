@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex paper"] 1785427790.00148 "paper.aux" "paper.bbl" "paper" 1785427831.54687 0
-  "./references.bib" 1785427789.24799 3522 bac0bb2c561240e856ef69ca3f271294 ""
+["bibtex paper"] 1785515595.49119 "paper.aux" "paper.bbl" "paper" 1785515596.90829 0
+  "./references.bib" 1785515593.46607 3905 09fe702d3ac06549721989b00b118a96 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "paper.aux" 1785427831.38131 4237 f8abb10dc312ca9da2da1e3ddfb1b90d "pdflatex"
+  "paper.aux" 1785515596.59509 4116 587769749b0f9e662164522332d6a455 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1785427830.92781 "paper.tex" "paper.pdf" "paper" 1785427831.54699 0
+["pdflatex"] 1785515595.64079 "paper.tex" "paper.pdf" "paper" 1785515596.90849 0
   "/etc/texmf/web2c/texmf.cnf" 1784133114.16911 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -77,10 +77,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1784211855 3642005 535e4afc79f485fbd339bf39ba1c34f3 ""
   "SubprimeLoanSpread2006.png" 1785180396.1908 782305 7f46e8540478b3f26227e89d1f2acc9b ""
   "pairplot.png" 1785427830.76008 298878 1defc4779f18855ff9a27068a660053d ""
-  "paper.aux" 1785427831.38131 4237 f8abb10dc312ca9da2da1e3ddfb1b90d "pdflatex"
-  "paper.bbl" 1785427790.069 2682 53fcc9bb45cff966fc9f4b301b6e7f97 "bibtex paper"
-  "paper.out" 1785427831.38274 2596 6f862b399914c3065052f2450bd5b4ea "pdflatex"
-  "paper.tex" 1785427767.97983 18135 355af29fe909edfdd0af3266ea7addf0 ""
+  "paper.aux" 1785515596.59509 4116 587769749b0f9e662164522332d6a455 "pdflatex"
+  "paper.bbl" 1785515595.63508 2528 9c581e8021a2c600bbb7bf781fa10934 "bibtex paper"
+  "paper.out" 1785515596.59691 2445 b7a03a021feab55ad23962e2562e344e "pdflatex"
+  "paper.tex" 1785515561.57186 18263 92e2918357546fe3c974e17300770de3 ""
   (generated)
   "paper.aux"
   "paper.log"

@@ -37,12 +37,6 @@ Christopher~J. Mayer and Karen~M. Pence.
 \newblock Subprime mortgages: what, where, and to whom?
 \newblock Finance and Economics Discussion Series 2008-29, Board of Governors of the Federal Reserve System (U.S.), 2008.
 
-\bibitem{mian2009consequences}
-Atif Mian and Amir Sufi.
-\newblock The consequences of mortgage credit expansion: Evidence from the 2007 mortgage default crisis.
-\newblock {\em The Quarterly Journal of Economics}, 124(4):1449--1496, 2009.
-\newblock DOI: 10.1162/qjec.2009.124.4.1449.
-
 \bibitem{naeh_state_of_homelessness}
 {National Alliance to End Homelessness}.
 \newblock State of homelessness report.
@@ -54,6 +48,10 @@ Atif Mian and Amir Sufi.
 \newblock The problem: Why we care.
 \newblock \url{https://nlihc.org/explore-issues/why-we-care/problem}, 2023.
 \newblock Accessed: 2026-07-28.
+
+\bibitem{richter2026houseprices}
+Felix Richter.
+\newblock House prices outpaced income growth over the past 40 years, June 2026.
 
 \bibitem{census_acs_2016_2020}
 {U.S. Census Bureau}.

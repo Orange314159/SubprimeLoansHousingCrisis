@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.16)  29 JUL 2026 11:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.7.16)  31 JUL 2026 11:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -845,9 +845,9 @@ Package pdftex.def Info: logo.jpeg  used on input line 155.
 File: output_page-05.png Graphic file (type png)
 <use output_page-05.png>
 Package pdftex.def Info: output_page-05.png  used on input line 155.
-(pdftex.def)             Requested size: 174.44734pt x 230.99371pt.
+(pdftex.def)             Requested size: 169.27637pt x 224.14662pt.
 
-Overfull \vbox (7.76468pt too high) detected at line 155
+Overfull \vbox (0.91759pt too high) detected at line 155
  []
 
 File: logo.jpeg Graphic file (type jpg)
@@ -888,13 +888,13 @@ Package rerunfilecheck Info: File `sideproject.out' has not changed.
 Here is how much of TeX's memory you used:
  25146 strings out of 467533
  501524 string characters out of 5422138
- 883938 words of memory out of 5000000
+ 883940 words of memory out of 5000000
  53537 multiletter control sequences out of 15000+600000
  640083 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,123p,403b,896s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on sideproject.pdf (6 pages, 277328 bytes).
+Output written on sideproject.pdf (6 pages, 277327 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams

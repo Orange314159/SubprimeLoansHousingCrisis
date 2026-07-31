@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1785443968.04843 "presentation.tex" "presentation.pdf" "presentation" 1785443969.37332 0
+["pdflatex"] 1785515626.01154 "presentation.tex" "presentation.pdf" "presentation" 1785515628.31822 0
   "/etc/texmf/web2c/texmf.cnf" 1784133114.16911 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -224,10 +224,10 @@
   "PIT Trend.png" 1785180393.95078 83038 331e26c58daefda230c17bbd9e1bfcac ""
   "SubprimeLoanSpread2006.png" 1785180396.1908 782305 7f46e8540478b3f26227e89d1f2acc9b ""
   "logo.jpeg" 1785180391.89197 10657 1184016922cc3b3efd3369ac7c23763d ""
-  "presentation.aux" 1785443969.31606 2146 04c2a933e1a5f167f6ef52f8d9b608b8 "pdflatex"
-  "presentation.nav" 1785443969.31686 1388 37fb167c90003b6656a249083ce3750a "pdflatex"
-  "presentation.out" 1785443968.54365 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "presentation.tex" 1785443880.96178 11781 ff21a5656bc08d8f52af631ecba327b2 ""
+  "presentation.aux" 1785515628.21632 2146 04c2a933e1a5f167f6ef52f8d9b608b8 "pdflatex"
+  "presentation.nav" 1785515628.21788 1388 37fb167c90003b6656a249083ce3750a "pdflatex"
+  "presentation.out" 1785515626.89231 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "presentation.tex" 1785515624.57229 11782 528d8bef1dd2e807c165876b71a8973f ""
   (generated)
   "presentation.aux"
   "presentation.log"
