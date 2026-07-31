@@ -161,10 +161,12 @@ sudo apt update && sudo apt install texlive-full
 ```
 
 ```bash
-pdflatex docs/presentation.tex
+cd docs
+pdflatex presentation.tex
 ```
 
 ```bash
-pdflatex docs/paper.tex 
+cd docs
+pdflatex paper.tex 
 ```
 
